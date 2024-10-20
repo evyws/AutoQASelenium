@@ -13,7 +13,7 @@ pipeline {
                     $class: 'GitSCM',
                     branches: [[name: '*/evy']],
                     userRemoteConfigs: [[
-                        url: 'git@github.com:evyws/AutoQASelenium.git',
+                        url: 'https://github.com/evyws/AutoQASelenium.git',
                     ]]
                 ])
             }
