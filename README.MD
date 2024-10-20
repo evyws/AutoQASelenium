@@ -1,7 +1,7 @@
 # Test Automation Framework
 
 ## Overview
-This project is a sophisticated test automation framework built with Java, Selenium WebDriver, and TestNG. It's designed for high-performance, parallel execution of tests across multiple environments and browsers.
+This project is a  test automation framework built with Java, Selenium WebDriver, and TestNG. It's designed for high-performance, parallel execution of tests across multiple environments and browsers.
 
 ## Key Features
 
