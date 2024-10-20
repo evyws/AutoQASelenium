@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="QA Tests Suite" parallel="tests">
+    <listeners>
+        <listener class-name="org.evy.toolkit.listeners.TestExecutionLogger"/>
+    </listeners>
+
+    <test name="Account Tests">
+        <classes>
+            <class name="org.evy.test.LoginTest"/>
+            <class name="org.evy.test.RegistrationTest"/>
+            <class name="org.evy.test.LogoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Product Tests">
+       <classes>
+           <class name="org.evy.test.ProductCategoriesTest"/>
+           <class name="org.evy.test.ProductNameTest"/>
+       </classes>
+    </test>
+
+    <test name="Cart Tests">
+        <classes>
+            <class name="org.evy.test.AddProductToCartTest"/>
+            <class name="org.evy.test.RemoveProductFromCartTest"/>
+        </classes>
+    </test>
+
+    <test name="EndToEnd Test">
+        <classes>
+            <class name="org.evy.test.EndToEndTest"/>
+        </classes>
+    </test>
+
+</suite>
