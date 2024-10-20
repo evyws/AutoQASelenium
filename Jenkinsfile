@@ -28,7 +28,7 @@ pipeline {
         stage('Generate Allure Report') {
             steps {
                 script {
-                    sh 'mvn allure:serve'
+                    sh 'mvn allure:report'
 
                     archiveArtifacts artifacts: 'target/site/allure-maven-plugin/**'
                 }
@@ -38,7 +38,6 @@ pipeline {
 
     post {
         always {
-
             allure([
                 includeProperties: false,
                 jdk: '',
